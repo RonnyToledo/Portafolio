@@ -363,20 +363,32 @@
         <div class="fila">
           <!-- Formulario -->
           <div class="col">
-            <input type="text" id="campo1" placeholder="Tú Nombre" />
-            <input type="text" id="campo3" placeholder="Dirección de correo" />
-            <input type="text" id="campo4" placeholder="Tema" />
-            <textarea
-              name=""
-              cols="30"
-              rows="10"
-              id="campo5"
-              placeholder="Mensaje"
-            ></textarea>
-            <button id="enviar-whatsapp">
-              Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-              <span class="overlay"></span>
-            </button>
+            <form id="form">
+              <input
+                type="text"
+                name="from_name"
+                id="from_name"
+                placeholder="Tú Nombre"
+              />
+              <input
+                type="text"
+                name="email_id"
+                id="email_id"
+                placeholder="Dirección de correo"
+              />
+              <input type="text" name="theme" id="theme" placeholder="Tema" />
+              <textarea
+                name="message"
+                cols="30"
+                rows="10"
+                id="message"
+                placeholder="Mensaje"
+              ></textarea>
+              <button id="enviar-whatsapp">
+                Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                <span class="overlay"></span>
+              </button>
+            </form>
           </div>
           <!-- Mapa -->
           <div class="col">
@@ -424,10 +436,20 @@
         ></a>
       </div>
     </footer>
-
-    <script src="script.js"></script>
   </body>
-  <script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+
+  <script type="text/javascript">
+    emailjs.init("Er3G9aJCUc01JFatr");
+  </script>
+
+  <script src="script.js"></script>
+  <script src="correo.js"></script>
+
+  <!-- <script>
     document
       .getElementById("enviar-whatsapp")
       .addEventListener("click", function () {
@@ -454,5 +476,5 @@
           "https://wa.me/5352489105?text=" + encodeURIComponent(mensaje);
         window.open(urlWhatsApp);
       });
-  </script>
+  </script>-->
 </html>
