@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">RONNY</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+    <div style="height: 70px"></div>
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/pick.jpg" alt="" />
+        </div>
+        <h1><b>R</b>ONNY <b>T</b>OLEDO <b>R</b>AMOS</h1>
+        <h2>Ingeniero de Software</h2>
+        <div class="redes">
+          <a href="https://www.facebook.com/profile.php?id=100077748318698"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com/RonnyToledo87"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/ronny_tr_33/?next=%2F"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/ronny-toledo-705857259#"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p>
+          <span>Hola, soy Ronny Toledo Ramos</span>, un estudiante de Ingeniería
+          Automática en la Universidad Central "Marta Abreu" de Las Villas
+          (UCLV) en Cuba. Desde pequeño, siempre he sentido una gran pasión por
+          la tecnología y el mundo digital, lo que me llevó a elegir esta
+          carrera. Durante mi tiempo en la UCLV, he adquirido conocimientos
+          sólidos en áreas como la programación, electrónica y automatización.
+          Sin embargo, mi verdadero interés se ha centrado en el desarrollo
+          Frontend. Me encanta crear interfaces interactivas y atractivas que
+          brinden una experiencia de usuario excepcional.
+        </p>
+
+        <div class="fila">
+          <!-- datos personales -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaños</strong>
+                28-12-2002
+              </li>
+              <li>
+                <strong>Teléfono</strong>
+                +53 52489105
+              </li>
+              <li>
+                <strong>Email</strong>
+                ronnytoledo@gmail.com
+              </li>
+              <li>
+                <strong>Website</strong>
+                www.github.com/Automa7ech/
+              </li>
+              <li>
+                <strong>Dirección</strong>
+                Céspedes, Camaguey, Cuba
+              </li>
+              <li>
+                <strong>Cargo</strong>
+                <span>LIBRE</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- intereses -->
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <span>VIAJAR</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-user-friends"></i>
+                <span>COMPARTIR</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-futbol-ball"></i>
+                <span>DEPORTE</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-file-video"></i>
+                <span>PELICULAS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-bowl-food"></i>
+                <span>COMIDA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-camera"></i>
+                <span>FOTOS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!-- Technical Skill -->
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>Javascript</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>89%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Photoshop</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Wordpress</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>81%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Professional Skills -->
+          <div class="col">
+            <h3>Professional Skills</h3>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>55%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>84%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>72%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>99%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>IPVCE</h4>
+              <span class="casa">Máximo Gómez Báez</span>
+              <span class="fecha">2017-2020</span>
+              <p>
+                Durante mi estancia en el IPVCE de Camagüey, fui un alumno
+                promedio que se esforzó por obtener buenos resultados
+                académicos. Durante este tiempo, tuve la oportunidad de aprender
+                y desarrollar habilidades en diversas áreas. En el ámbito
+                académico, cursé asignaturas como matemáticas, física, química,
+                historia y literatura. Aunque algunas de estas materias me
+                resultaron más difíciles que otras, siempre me esforcé por
+                entender los conceptos y obtener buenas calificaciones.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Universidad</h4>
+              <span class="casa">UCLV</span>
+              <span class="fecha">2022- act</span>
+              <p>
+                Durante mi estancia en la UCLV, he tenido la oportunidad de
+                continuar aprendiendo y desarrollando mis habilidades en
+                diferentes áreas. En el ámbito académico, he cursado asignaturas
+                relacionadas con mi carrera y he trabajado arduamente para
+                comprender los conceptos y obtener buenas calificaciones. Aunque
+                algunas materias han sido más desafiantes que otras, siempre me
+                esfuerzo por superar los obstáculos y seguir aprendiendo.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Experiencia de trabajo</h3>
+            <div class="item der">
+              <h4>Experiensas en Frontend</h4>
+              <span class="casa">Proyectos Personales</span>
+              <span class="fecha">2023 - act</span>
+              <p>
+                He aprovechado al máximo las oportunidades que se me han
+                presentado, tanto en el ámbito académico como en proyectos
+                extracurriculares, para adquirir conocimientos prácticos y
+                experiencia en frontend. Mi participación en actividades
+                grupales y colaborativas me ha permitido mejorar mis habilidades
+                de trabajo en equipo y comunicación, lo cual es fundamental en
+                el campo del desarrollo web.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <!--
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="img/p1.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p2.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p3.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p4.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p5.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p6.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <div class="col">
+            <input type="text" id="campo1" placeholder="Tú Nombre" />
+            <input type="text" id="campo3" placeholder="Dirección de correo" />
+            <input type="text" id="campo4" placeholder="Tema" />
+            <textarea
+              name=""
+              cols="30"
+              rows="10"
+              id="campo5"
+              placeholder="Mensaje"
+            ></textarea>
+            <button id="enviar-whatsapp">
+              Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </div>
+          <!-- Mapa -->
+          <div class="col">
+            <img src="img/mapa.jpg" alt="" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Céspedes, Camaguey
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  Llamanos: <br />
+                  +53 52489105
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email:<br />
+                  ronnytoledo87@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="https://www.facebook.com/profile.php?id=100077748318698"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a href="https://twitter.com/RonnyToledo87"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://www.instagram.com/ronny_tr_33/?next=%2F"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/ronny-toledo-705857259#"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  <script>
+    document
+      .getElementById("enviar-whatsapp")
+      .addEventListener("click", function () {
+        var campo1 = document.getElementById("campo1").value;
+        var campo3 = document.getElementById("campo3").value;
+        var campo4 = document.getElementById("campo4").value;
+        var campo5 = document.getElementById("campo5").value;
+
+        var mensaje =
+          "*Solicitante*:\n" +
+          "Nombre:" +
+          campo1 +
+          "\n" +
+          "Correo:" +
+          campo3 +
+          "\n" +
+          "Tema:" +
+          campo4 +
+          "\n" +
+          "Explicacion:" +
+          campo5;
+
+        var urlWhatsApp =
+          "https://wa.me/5352489105?text=" + encodeURIComponent(mensaje);
+        console.log(urlWhatsApp);
+        //window.open(urlWhatsApp);
+      });
+  </script>
+</html>
